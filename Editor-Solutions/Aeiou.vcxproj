@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="..\Include\Aeiou.hh" />
     <ClInclude Include="..\Include\Aeiou\Aeiou.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configuration.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
