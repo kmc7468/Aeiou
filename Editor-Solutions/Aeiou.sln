@@ -4,8 +4,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aeiou", "Aeiou.vcxproj", "{7A77BB55-2CF8-4E13-AF50-80E6D8B02522}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F113BDC6-16A3-40FE-9019-59A6250B153C} = {F113BDC6-16A3-40FE-9019-59A6250B153C}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aeiou-Preprocessor", "Sub-Modules\Aeiou-Preprocessor\Aeiou-Preprocessor.vcxproj", "{F113BDC6-16A3-40FE-9019-59A6250B153C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test-Projects", "Test-Projects", "{B70F8639-1A5E-4666-97DE-6B756D6C7814}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test1", "Test-Projects\Test1\Test1.vcxproj", "{BA4BAFD6-CC48-462B-9277-C19D036175E8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7A77BB55-2CF8-4E13-AF50-80E6D8B02522} = {7A77BB55-2CF8-4E13-AF50-80E6D8B02522}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,8 +41,19 @@ Global
 		{F113BDC6-16A3-40FE-9019-59A6250B153C}.Release|x64.Build.0 = Release|x64
 		{F113BDC6-16A3-40FE-9019-59A6250B153C}.Release|x86.ActiveCfg = Release|Win32
 		{F113BDC6-16A3-40FE-9019-59A6250B153C}.Release|x86.Build.0 = Release|Win32
+		{BA4BAFD6-CC48-462B-9277-C19D036175E8}.Debug|x64.ActiveCfg = Debug|x64
+		{BA4BAFD6-CC48-462B-9277-C19D036175E8}.Debug|x64.Build.0 = Debug|x64
+		{BA4BAFD6-CC48-462B-9277-C19D036175E8}.Debug|x86.ActiveCfg = Debug|Win32
+		{BA4BAFD6-CC48-462B-9277-C19D036175E8}.Debug|x86.Build.0 = Debug|Win32
+		{BA4BAFD6-CC48-462B-9277-C19D036175E8}.Release|x64.ActiveCfg = Release|x64
+		{BA4BAFD6-CC48-462B-9277-C19D036175E8}.Release|x64.Build.0 = Release|x64
+		{BA4BAFD6-CC48-462B-9277-C19D036175E8}.Release|x86.ActiveCfg = Release|Win32
+		{BA4BAFD6-CC48-462B-9277-C19D036175E8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA4BAFD6-CC48-462B-9277-C19D036175E8} = {B70F8639-1A5E-4666-97DE-6B756D6C7814}
 	EndGlobalSection
 EndGlobal
