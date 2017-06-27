@@ -138,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Features-Supported.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

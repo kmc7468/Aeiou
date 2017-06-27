@@ -20,5 +20,8 @@
     <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Features-Supported.hh">
+      <Filter>Header-Files\Preprocessor</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
