@@ -10,6 +10,12 @@
     <Filter Include="Header-Files\Configurations">
       <UniqueIdentifier>{ac54aab4-143a-41c4-ac40-44a744b31eba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Configurations\Platforms">
+      <UniqueIdentifier>{7ac6aec4-0900-4fc4-88de-9219a77eec5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Configurations\Compilers">
+      <UniqueIdentifier>{4e3b0854-90ed-4906-a8f6-72f79567b7c9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Include\Aeiou.hh" />
@@ -29,6 +35,30 @@
       <Filter>Header-Files\Configurations</Filter>
     </ClInclude>
     <ClInclude Include="..\Include\Aeiou\Configurations\Platform-Values.hh">
+      <Filter>Header-Files\Configurations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Platforms\Linux.hh">
+      <Filter>Header-Files\Configurations\Platforms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Platforms\Windows.hh">
+      <Filter>Header-Files\Configurations\Platforms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\Clang.hh">
+      <Filter>Header-Files\Configurations\Compilers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\MSVC.hh">
+      <Filter>Header-Files\Configurations\Compilers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\GCC.hh">
+      <Filter>Header-Files\Configurations\Compilers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\ICC.hh">
+      <Filter>Header-Files\Configurations\Compilers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compiler.hh">
+      <Filter>Header-Files\Configurations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Platform.hh">
       <Filter>Header-Files\Configurations</Filter>
     </ClInclude>
   </ItemGroup>

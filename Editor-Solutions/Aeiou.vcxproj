@@ -135,8 +135,16 @@
     <ClInclude Include="..\Include\Aeiou\Configurations.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Basic-Values.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Compiler-Values.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compiler.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\Clang.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\GCC.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\ICC.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\MSVC.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode-Values.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Platform-Values.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Platform.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Platforms\Linux.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Platforms\Windows.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
