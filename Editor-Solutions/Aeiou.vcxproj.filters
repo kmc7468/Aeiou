@@ -61,5 +61,8 @@
     <ClInclude Include="..\Include\Aeiou\Configurations\Platform.hh">
       <Filter>Header-Files\Configurations</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode.hh">
+      <Filter>Header-Files\Configurations</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

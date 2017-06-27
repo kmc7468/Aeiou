@@ -141,6 +141,7 @@
     <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\ICC.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\MSVC.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode-Values.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Platform-Values.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Platform.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Platforms\Linux.hh" />
