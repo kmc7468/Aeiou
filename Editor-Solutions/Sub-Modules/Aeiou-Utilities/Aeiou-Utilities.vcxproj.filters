@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header-Files">
+      <UniqueIdentifier>{0a13e8e1-56e5-44f2-9e1b-2ef4a81b2b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source-Files">
+      <UniqueIdentifier>{df641e69-1bac-40fe-9a99-d6992152a9e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Utilities">
+      <UniqueIdentifier>{bcf8c1d2-e97e-43f8-8c0e-131920ecce3f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\StaticAssert-Common.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Include\Aeiou\Utilities.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
