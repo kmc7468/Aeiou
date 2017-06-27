@@ -19,5 +19,17 @@
     <ClInclude Include="..\Include\Aeiou\Configurations.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Basic-Values.hh">
+      <Filter>Header-Files\Configurations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compiler-Values.hh">
+      <Filter>Header-Files\Configurations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode-Values.hh">
+      <Filter>Header-Files\Configurations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Platform-Values.hh">
+      <Filter>Header-Files\Configurations</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

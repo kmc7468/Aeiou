@@ -133,6 +133,10 @@
     <ClInclude Include="..\Include\Aeiou.hh" />
     <ClInclude Include="..\Include\Aeiou\Aeiou.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Basic-Values.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Compiler-Values.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode-Values.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Platform-Values.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

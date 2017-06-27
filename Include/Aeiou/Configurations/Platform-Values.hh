@@ -1,0 +1,12 @@
+/*
+Aeiou is protected by Aeiou Public License Version 1.
+Made by kmc7468
+*/
+
+#ifndef AEIOU_HEADER_CONFIGURATIONS_PLATFORM_VALUES_HH
+#define AEIOU_HEADER_CONFIGURATIONS_PLATFORM_VALUES_HH
+
+#define AEIOU_CONFIG_WINDOWS	(103000000L)
+#define AEIOU_CONFIG_LINUX		(103000001L)
+
+#endif
