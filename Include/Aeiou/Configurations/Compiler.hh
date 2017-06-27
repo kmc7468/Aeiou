@@ -18,4 +18,5 @@ Made by kmc7468
 #error "Compiler not supported."
 #endif
 
+#include <Aeiou/Configurations/Features.hh>
 #endif

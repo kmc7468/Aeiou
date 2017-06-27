@@ -17,4 +17,10 @@ Made by kmc7468
 #define AEIOU_CONFIG_SUPPORTED_LINUX AEIOU_CONFIG_YES
 #define AEIOU_CONFIG_SUPPORTED_WINDOWS AEIOU_CONFIG_YES
 
+#if (__clang_major__ == 2 && __clang_minor__ >= 9) || __clang_major__ > 2 // clang 2.9
+#define AEIOU_CONFIG_SUPPORTED_STATICASSERT AEIOU_CONFIG_YES
+#else
+#define AEIOU_CONFIG_SUPPORTED_STATICASSERT AEIOU_CONFIG_NO
+#endif
+
 #endif

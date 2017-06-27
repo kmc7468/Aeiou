@@ -140,6 +140,8 @@
     <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\GCC.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\ICC.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Compilers\MSVC.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Features.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Features\StaticAssert.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode-Values.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Platform-Values.hh" />

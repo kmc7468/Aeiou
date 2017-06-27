@@ -16,6 +16,9 @@
     <Filter Include="Header-Files\Configurations\Compilers">
       <UniqueIdentifier>{4e3b0854-90ed-4906-a8f6-72f79567b7c9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Configurations\Features">
+      <UniqueIdentifier>{d9db9ada-b72b-44e6-96fa-b1d68f95853f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Include\Aeiou.hh" />
@@ -62,6 +65,12 @@
       <Filter>Header-Files\Configurations</Filter>
     </ClInclude>
     <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode.hh">
+      <Filter>Header-Files\Configurations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Features\StaticAssert.hh">
+      <Filter>Header-Files\Configurations\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Features.hh">
       <Filter>Header-Files\Configurations</Filter>
     </ClInclude>
   </ItemGroup>
