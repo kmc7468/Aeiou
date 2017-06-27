@@ -74,4 +74,9 @@
       <Filter>Header-Files\Configurations</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\StaticAssert-Common.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

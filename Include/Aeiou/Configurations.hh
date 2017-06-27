@@ -8,4 +8,9 @@ Made by kmc7468
 
 #include <Aeiou/Configurations/Basic-Values.hh>
 
+#include <Aeiou/Configurations/Compiler.hh>
+#include <Aeiou/Configurations/Features.hh>
+#include <Aeiou/Configurations/LinkingMode.hh>
+#include <Aeiou/Configurations/Platform.hh>
+
 #endif
