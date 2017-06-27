@@ -7,7 +7,7 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{b96f24de-727e-40f0-a005-7da45ff6ddb3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header-Files\Configuration">
+    <Filter Include="Header-Files\Configurations">
       <UniqueIdentifier>{ac54aab4-143a-41c4-ac40-44a744b31eba}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -16,7 +16,7 @@
     <ClInclude Include="..\Include\Aeiou\Aeiou.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Include\Aeiou\Configuration.hh">
+    <ClInclude Include="..\Include\Aeiou\Configurations.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>
