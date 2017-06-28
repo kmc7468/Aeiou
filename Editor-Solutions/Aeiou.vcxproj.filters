@@ -73,6 +73,12 @@
     <ClInclude Include="..\Include\Aeiou\Configurations\Features.hh">
       <Filter>Header-Files\Configurations</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Features\Final.hh">
+      <Filter>Header-Files\Configurations\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Aeiou\Configurations\Features\Constexpr.hh">
+      <Filter>Header-Files\Configurations\Features</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\StaticAssert-Common.cc">
