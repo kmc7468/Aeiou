@@ -147,6 +147,7 @@
     <ClInclude Include="..\Include\Aeiou\Configurations\Features.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Features\Constexpr.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Features\Final.hh" />
+    <ClInclude Include="..\Include\Aeiou\Configurations\Features\NoExcept.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\Features\StaticAssert.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode-Values.hh" />
     <ClInclude Include="..\Include\Aeiou\Configurations\LinkingMode.hh" />

@@ -6,4 +6,6 @@ Made by kmc7468
 #ifndef AEIOU_HEADER_UTILITIES_HH
 #define AEIOU_HEADER_UTILITIES_HH
 
+#include <Aeiou/Utilities/NonComparable.hh>
+
 #endif

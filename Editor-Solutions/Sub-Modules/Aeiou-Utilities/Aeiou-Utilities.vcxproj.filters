@@ -20,5 +20,8 @@
     <ClInclude Include="..\..\..\Include\Aeiou\Utilities.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Utilities\NonComparable.hh">
+      <Filter>Header-Files\Utilities</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
