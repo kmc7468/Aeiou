@@ -8,4 +8,8 @@ Made by kmc7468
 
 #include <Aeiou/Configurations.hh>
 
+#include <Aeiou/Preprocessor.hh>
+#include <Aeiou/TypeTraits.hh>
+#include <Aeiou/Utilities.hh>
+
 #endif

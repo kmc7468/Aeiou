@@ -5,6 +5,7 @@ Made by kmc7468
 
 #ifndef AEIOU_HEADER_CONFIGURATIONS_PLATFORM_HH
 #define AEIOU_HEADER_CONFIGURATIONS_PLATFORM_HH
+
 #include <Aeiou/Configurations/Basic-Values.hh>
 #include <Aeiou/Configurations/Compiler.hh>
 

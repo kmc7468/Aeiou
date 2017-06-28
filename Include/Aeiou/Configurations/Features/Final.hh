@@ -6,8 +6,8 @@ Made by kmc7468
 #ifndef AEIOU_HEADER_CONFIGURATIONS_FEATURES_FINAL_HH
 #define AEIOU_HEADER_CONFIGURATIONS_FEATURES_FINAL_HH
 #include <Aeiou/Configurations/Basic-Values.hh>
-#include <Aeiou/Configurations/Compiler.hh>
 
+#include <Aeiou/Configurations/Compiler.hh>
 #include <Aeiou/Configurations/Features/Constexpr.hh>
 
 #define AEIOU_NON_INHERITABLE(name) AEIOU_NON_INHERITABLE_DESTRUCTOR(name, ;)

@@ -5,6 +5,7 @@ Made by kmc7468
 
 #ifndef AEIOU_HEADER_CONFIGURATIONS_LINKINGMODE_HH
 #define AEIOU_HEADER_CONFIGURATIONS_LINKINGMODE_HH
+
 #include <Aeiou/Configurations/Compiler.hh>
 #include <Aeiou/Configurations/LinkingMode-Values.hh>
 
