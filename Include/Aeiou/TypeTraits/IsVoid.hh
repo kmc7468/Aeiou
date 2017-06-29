@@ -20,7 +20,7 @@ namespace Aeiou
 		class IsVoid AEIOU_FINAL
 			: Utilities::NonComparable, Utilities::NonCopyable
 		{
-			AEIOU_NON_INHERITABLE(IsPointer)
+			AEIOU_NON_INHERITABLE(IsVoid)
 
 		public:
 			AEIOU_CONSTEXPR static const bool Value =

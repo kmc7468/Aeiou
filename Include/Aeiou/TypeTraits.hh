@@ -12,6 +12,8 @@ Made by kmc7468
 #include <Aeiou/TypeTraits/IsInteger.hh>
 #include <Aeiou/TypeTraits/IsPointer.hh>
 #include <Aeiou/TypeTraits/IsVoid.hh>
+#include <Aeiou/TypeTraits/MakeSigned.hh>
+#include <Aeiou/TypeTraits/MakeUnsigned.hh>
 #include <Aeiou/TypeTraits/RemoveCV.hh>
 
 #endif

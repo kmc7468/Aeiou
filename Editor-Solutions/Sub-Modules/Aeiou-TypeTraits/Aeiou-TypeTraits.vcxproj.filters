@@ -10,6 +10,9 @@
     <Filter Include="Header-Files\TypeTraits">
       <UniqueIdentifier>{88fbb73d-07f6-4b83-ad17-3463514d3bb4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\TypeTraits\Details">
+      <UniqueIdentifier>{533def9d-b277-4ac9-816c-f842d53858b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\StaticAssert-Common.cc">
@@ -42,6 +45,15 @@
       <Filter>Header-Files\TypeTraits</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsVoid.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\Details\ChangeSign.hh">
+      <Filter>Header-Files\TypeTraits\Details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\MakeSigned.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\MakeUnsigned.hh">
       <Filter>Header-Files\TypeTraits</Filter>
     </ClInclude>
   </ItemGroup>
