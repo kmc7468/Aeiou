@@ -20,5 +20,29 @@
     <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsEqual.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsFundamental.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsArithmetic.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsFloatingPoint.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsInteger.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\RemoveCV.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsPointer.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsVoid.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
