@@ -7,5 +7,6 @@ Made by kmc7468
 #define AEIOU_HEADER_UTILITIES_HH
 
 #include <Aeiou/Utilities/NonComparable.hh>
+#include <Aeiou/Utilities/NonCopyable.hh>
 
 #endif

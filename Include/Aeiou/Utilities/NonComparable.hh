@@ -5,6 +5,7 @@ Made by kmc7468
 
 #ifndef AEIOU_HEADER_UTILITIES_NONCOMPARABLE_HH
 #define AEIOU_HEADER_UTILITIES_NONCOMPARABLE_HH
+#include <Aeiou/Configurations.hh>
 
 #include <Aeiou/Preprocessor/Features-Supported.hh>
 
@@ -15,6 +16,8 @@ namespace Aeiou
 		class NonComparable
 		{
 		protected:
+			AEIOU_CONSTEXPR NonComparable()
+			{}
 			~NonComparable()
 			{}
 
