@@ -6,6 +6,7 @@ Made by kmc7468
 #ifndef AEIOU_HEADER_UTILITIES_INTEGER_HH
 #define AEIOU_HEADER_UTILITIES_INTEGER_HH
 
+#include <Aeiou/Preprocessor/Features-Supported.hh>
 #include <Aeiou/TypeTraits/MakeSigned.hh>
 #include <Aeiou/TypeTraits/MakeUnsigned.hh>
 
@@ -46,7 +47,7 @@ namespace Aeiou
 #error "Platform not supported."
 #endif
 
-#ifdef ULLONG_MAX
+#ifdef AEIOU_SUPPORTED_LONGLONG
 #if USHRT_MAX == 18446744073709551615
 		typedef signed short Int64_t;
 		typedef unsigned short UInt64_t;
