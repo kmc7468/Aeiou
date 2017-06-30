@@ -9,8 +9,8 @@ Made by kmc7468
 #include <climits>
 
 #ifdef AEIOU_SUPPORTED_STATIC_ASSERT
-AEIOU_STATIC_ASSERT(sizeof(void*) * CHAR_BIT >= 16,
-					"Only 16-bit and higher systems are supported.");
+AEIOU_STATIC_ASSERT(sizeof(void*) * CHAR_BIT >= 16 && sizeof(void*) * CHAR_BIT <= 64,
+					"Only 16-bit, 32-bit, and 64-bit systems are supported.");
 
 AEIOU_STATIC_ASSERT(CHAR_BIT == 8,
 					"Only systems with 8-bits per byte are supported.");
@@ -20,7 +20,7 @@ AEIOU_STATIC_ASSERT(sizeof(float) == 4 && sizeof(double) == 8,
 					"a double of 8 bytes are supported.");
 #else
 AEIOU_STATIC_ASSERT(sizeof(void*) * CHAR_BIT >= 16,
-					Only_16_bit_and_higher_systems_are_supported);
+					Only_16_bit_32_bit_and_64_bit_systems_are_supported);
 
 AEIOU_STATIC_ASSERT(CHAR_BIT == 8,
 					Only_systems_with_8_bits_per_byte_are_supported);
