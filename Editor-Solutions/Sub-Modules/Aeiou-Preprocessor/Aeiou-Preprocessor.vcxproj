@@ -138,7 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Bool.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Features-Supported.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Identity.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
