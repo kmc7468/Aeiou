@@ -6,6 +6,7 @@ Made by kmc7468
 #ifndef AEIOU_HEADER_PREPROCESSOR_BOOL_HH
 #define AEIOU_HEADER_PREPROCESSOR_BOOL_HH
 
+#include <Aeiou/Preprocessor/Configurations/DataLimit.hh>
 #include <Aeiou/Preprocessor/Identity.hh>
 
 #define AEIOU_PP_BOOL(value) AEIOU_PP_IDENTITY(AEIOU_I_PP_BOOL(value))
@@ -268,4 +269,7 @@ Made by kmc7468
 #define AEIOU_I_PP_BOOL_254 1
 #define AEIOU_I_PP_BOOL_255 1
 
+#if AEIOU_CONFIG_PP_DATALIMIT == AEIOU_CONFIG_PP_2BYTE
+#include "Details/2ByteBool.hh"
+#endif
 #endif

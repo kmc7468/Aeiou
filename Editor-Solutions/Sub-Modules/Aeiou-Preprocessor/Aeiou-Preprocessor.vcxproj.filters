@@ -10,6 +10,12 @@
     <Filter Include="Header-Files\Preprocessor">
       <UniqueIdentifier>{2970d884-86b8-49b2-91c9-28ee7d176742}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Preprocessor\Configurations">
+      <UniqueIdentifier>{ddb7c643-9f74-4153-92ad-b67f9615f25d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Preprocessor\Details">
+      <UniqueIdentifier>{4ca1309d-88ba-4c5b-b093-400732eaff35}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\StaticAssert-Common.cc">
@@ -28,6 +34,15 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Identity.hh">
       <Filter>Header-Files\Preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Configurations\DataLimit.hh">
+      <Filter>Header-Files\Preprocessor\Configurations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Configurations\DataLimit-Values.hh">
+      <Filter>Header-Files\Preprocessor\Configurations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Details\2ByteBool.hh">
+      <Filter>Header-Files\Preprocessor\Details</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

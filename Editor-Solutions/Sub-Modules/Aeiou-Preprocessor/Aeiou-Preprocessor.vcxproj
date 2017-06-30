@@ -139,6 +139,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Bool.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Configurations\DataLimit-Values.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Configurations\DataLimit.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Details\2ByteBool.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Features-Supported.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\Preprocessor\Identity.hh" />
   </ItemGroup>
