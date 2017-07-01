@@ -32,5 +32,8 @@
     <ClInclude Include="..\..\..\Include\Aeiou\Utilities\AlwaysInline.hh">
       <Filter>Header-Files\Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Utilities\FloatingPoint.hh">
+      <Filter>Header-Files\Utilities</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

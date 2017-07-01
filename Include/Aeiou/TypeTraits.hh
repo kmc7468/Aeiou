@@ -15,5 +15,6 @@ Made by kmc7468
 #include <Aeiou/TypeTraits/MakeSigned.hh>
 #include <Aeiou/TypeTraits/MakeUnsigned.hh>
 #include <Aeiou/TypeTraits/RemoveCV.hh>
+#include <Aeiou/TypeTraits/SelectIf.hh>
 
 #endif

@@ -10,6 +10,7 @@ Made by kmc7468
 #include <Aeiou/Preprocessor/Features-Supported.hh>
 #include <Aeiou/TypeTraits/MakeSigned.hh>
 #include <Aeiou/TypeTraits/MakeUnsigned.hh>
+#include <Aeiou/TypeTraits/SelectIf.hh>
 #include <Aeiou/Utilities/NonComparable.hh>
 #include <Aeiou/Utilities/NonCopyable.hh>
 
@@ -79,28 +80,9 @@ namespace Aeiou
 
 		namespace Details
 		{
-			template<bool Condition_, typename True_, typename False_>
-			class If_ AEIOU_FINAL
-				: NonComparable, NonCopyable
-			{
-				AEIOU_NON_INHERITABLE(If_)
-
-			public:
-				typedef True_ Type;
-			};
-			template<typename True_, typename False_>
-			class If_<false, True_, False_> AEIOU_FINAL
-				: NonComparable, NonCopyable
-			{
-				AEIOU_NON_INHERITABLE(If_)
-
-			public:
-				typedef False_ Type;
-			};
-
-			typedef typename If_<sizeof(void*) == 2, Int16_t,
-				typename If_<sizeof(void*) == 4, Int32_t,
-				typename If_<sizeof(void*) == 8, Int64_t, void>
+			typedef typename TypeTraits::SelectIf<sizeof(void*) == 2, Int16_t,
+				typename TypeTraits::SelectIf<sizeof(void*) == 4, Int32_t,
+				typename TypeTraits::SelectIf<sizeof(void*) == 8, Int64_t, void>
 				::Type>::Type>::Type IntPtr_Original_t_;
 		}
 

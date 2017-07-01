@@ -139,6 +139,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Aeiou\Utilities.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\Utilities\AlwaysInline.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Utilities\FloatingPoint.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\Utilities\Integer.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\Utilities\NonComparable.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\Utilities\NonCopyable.hh" />

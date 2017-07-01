@@ -56,5 +56,8 @@
     <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\MakeUnsigned.hh">
       <Filter>Header-Files\TypeTraits</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\SelectIf.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
