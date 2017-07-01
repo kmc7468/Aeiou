@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header-Files">
+      <UniqueIdentifier>{2794df3d-82c4-4b95-ba17-2a094480a7e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source-Files">
+      <UniqueIdentifier>{c6aca9eb-f14d-4e49-a6ae-0f610f0b7231}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Include\AeiouScript.hh" />
+    <ClInclude Include="..\..\..\Include\AeiouScript\AeiouScript.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

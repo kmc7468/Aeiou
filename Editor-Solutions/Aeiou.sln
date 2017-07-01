@@ -23,6 +23,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aeiou-TypeTraits", "Sub-Mod
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aeiou-Utilities", "Sub-Modules\Aeiou-Utilities\Aeiou-Utilities.vcxproj", "{3566419D-530C-42DC-B80B-FEF41A16BD6E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sub-Projects", "Sub-Projects", "{773E94DB-0008-4A7F-A4FE-C243B709737D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AeiouScript", "Sub-Projects\AeiouScript\AeiouScript.vcxproj", "{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,11 +75,20 @@ Global
 		{3566419D-530C-42DC-B80B-FEF41A16BD6E}.Release|x64.Build.0 = Release|x64
 		{3566419D-530C-42DC-B80B-FEF41A16BD6E}.Release|x86.ActiveCfg = Release|Win32
 		{3566419D-530C-42DC-B80B-FEF41A16BD6E}.Release|x86.Build.0 = Release|Win32
+		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Debug|x64.ActiveCfg = Debug|x64
+		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Debug|x64.Build.0 = Debug|x64
+		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Debug|x86.ActiveCfg = Debug|Win32
+		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Debug|x86.Build.0 = Debug|Win32
+		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Release|x64.ActiveCfg = Release|x64
+		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Release|x64.Build.0 = Release|x64
+		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Release|x86.ActiveCfg = Release|Win32
+		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BA4BAFD6-CC48-462B-9277-C19D036175E8} = {B70F8639-1A5E-4666-97DE-6B756D6C7814}
+		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E} = {773E94DB-0008-4A7F-A4FE-C243B709737D}
 	EndGlobalSection
 EndGlobal
