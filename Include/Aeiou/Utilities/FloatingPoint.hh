@@ -10,8 +10,8 @@ namespace Aeiou
 {
 	namespace Utilities
 	{
-		typedef float Float32;
-		typedef double Float64;
+		typedef float Float32_t;
+		typedef double Float64_t;
 	}
 }
 
