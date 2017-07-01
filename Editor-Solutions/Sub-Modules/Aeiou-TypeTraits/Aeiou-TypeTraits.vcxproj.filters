@@ -59,5 +59,11 @@
     <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\SelectIf.hh">
       <Filter>Header-Files\TypeTraits</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\Constant.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\EnableIf.hh">
+      <Filter>Header-Files\TypeTraits</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

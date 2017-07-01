@@ -138,7 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\Constant.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\Details\ChangeSign.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\EnableIf.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsArithmetic.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsEqual.hh" />
     <ClInclude Include="..\..\..\Include\Aeiou\TypeTraits\IsFloatingPoint.hh" />

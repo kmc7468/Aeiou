@@ -33,6 +33,8 @@ namespace Aeiou
 			typedef False_ Type;
 		};
 	}
+
+	using TypeTraits::SelectIf;
 }
 
 #endif

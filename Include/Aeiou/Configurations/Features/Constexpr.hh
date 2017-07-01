@@ -10,7 +10,7 @@ Made by kmc7468
 #include <Aeiou/Configurations/Compiler.hh>
 
 #if AEIOU_CONFIG_SUPPORTED_CONSTEXPR == AEIOU_CONFIG_YES
-#define AEIOU_CONSTEXPR			constexpr
+#define AEIOU_CONSTEXPR constexpr
 #else
 #define AEIOU_CONSTEXPR
 #endif
