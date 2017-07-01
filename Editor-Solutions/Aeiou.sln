@@ -17,6 +17,7 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test1", "Test-Projects\Test1\Test1.vcxproj", "{BA4BAFD6-CC48-462B-9277-C19D036175E8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{7A77BB55-2CF8-4E13-AF50-80E6D8B02522} = {7A77BB55-2CF8-4E13-AF50-80E6D8B02522}
+		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E} = {F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aeiou-TypeTraits", "Sub-Modules\Aeiou-TypeTraits\Aeiou-TypeTraits.vcxproj", "{EFDD8D4A-DCEB-4DE8-A0A8-9F7CCF7BF43B}"
