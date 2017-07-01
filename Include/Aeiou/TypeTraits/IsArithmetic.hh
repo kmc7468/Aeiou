@@ -7,6 +7,7 @@ Made by kmc7468
 #define AEIOU_HEADER_TYPETRAITS_ISARITHMETIC_HH
 #include <Aeiou/Configurations.hh>
 
+#include <Aeiou/TypeTraits/Constant.hh>
 #include <Aeiou/TypeTraits/IsFloatingPoint.hh>
 #include <Aeiou/TypeTraits/IsInteger.hh>
 #include <Aeiou/Utilities/NonComparable.hh>
@@ -18,13 +19,9 @@ namespace Aeiou
 	{
 		template<typename Ty_>
 		class IsArithmetic AEIOU_FINAL
-			: Utilities::NonComparable, Utilities::NonCopyable
+			: public Constant<bool, IsFloatingPoint<Ty_>::Value || IsInteger<Ty_>::Value>
 		{
 			AEIOU_NON_INHERITABLE(IsArithmetic)
-
-		public:
-			AEIOU_CONSTEXPR static const bool Value =
-				IsFloatingPoint<Ty_>::Value || IsInteger<Ty_>::Value;
 		};
 	}
 

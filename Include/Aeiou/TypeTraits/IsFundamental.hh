@@ -7,6 +7,7 @@ Made by kmc7468
 #define AEIOU_HEADER_TYPETRAITS_ISFUNDAMENTAL_HH
 #include <Aeiou/Configurations.hh>
 
+#include <Aeiou/TypeTraits/Constant.hh>
 #include <Aeiou/TypeTraits/IsArithmetic.hh>
 #include <Aeiou/TypeTraits/IsPointer.hh>
 #include <Aeiou/TypeTraits/IsVoid.hh>
@@ -19,13 +20,10 @@ namespace Aeiou
 	{
 		template<typename Ty_>
 		class IsFundamental AEIOU_FINAL
-			: Utilities::NonComparable, Utilities::NonCopyable
+			: public Constant<bool,
+			IsArithmetic<Ty_>::Value || IsPointer<Ty_>::Value || IsVoid<Ty_>::Value>
 		{
 			AEIOU_NON_INHERITABLE(IsFundamental)
-
-		public:
-			AEIOU_CONSTEXPR static const bool Value =
-				IsArithmetic<Ty_>::Value || IsPointer<Ty_>::Value || IsVoid<Ty_>::Value;
 		};
 	}
 
