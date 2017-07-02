@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aeiou", "Aeiou.vcxproj", "{7A77BB55-2CF8-4E13-AF50-80E6D8B02522}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EFDD8D4A-DCEB-4DE8-A0A8-9F7CCF7BF43B} = {EFDD8D4A-DCEB-4DE8-A0A8-9F7CCF7BF43B}
+		{2555747D-1405-4602-94FC-7A72E5DC1198} = {2555747D-1405-4602-94FC-7A72E5DC1198}
 		{3566419D-530C-42DC-B80B-FEF41A16BD6E} = {3566419D-530C-42DC-B80B-FEF41A16BD6E}
 		{F113BDC6-16A3-40FE-9019-59A6250B153C} = {F113BDC6-16A3-40FE-9019-59A6250B153C}
 	EndProjectSection
@@ -27,6 +28,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sub-Projects", "Sub-Projects", "{773E94DB-0008-4A7F-A4FE-C243B709737D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AeiouScript", "Sub-Projects\AeiouScript\AeiouScript.vcxproj", "{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aeiou-Numerics", "Sub-Modules\Aeiou-Numerics\Aeiou-Numerics.vcxproj", "{2555747D-1405-4602-94FC-7A72E5DC1198}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,6 +87,14 @@ Global
 		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Release|x64.Build.0 = Release|x64
 		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Release|x86.ActiveCfg = Release|Win32
 		{F57AFBBB-DF6F-4434-B8DD-E3A45FFC793E}.Release|x86.Build.0 = Release|Win32
+		{2555747D-1405-4602-94FC-7A72E5DC1198}.Debug|x64.ActiveCfg = Debug|x64
+		{2555747D-1405-4602-94FC-7A72E5DC1198}.Debug|x64.Build.0 = Debug|x64
+		{2555747D-1405-4602-94FC-7A72E5DC1198}.Debug|x86.ActiveCfg = Debug|Win32
+		{2555747D-1405-4602-94FC-7A72E5DC1198}.Debug|x86.Build.0 = Debug|Win32
+		{2555747D-1405-4602-94FC-7A72E5DC1198}.Release|x64.ActiveCfg = Release|x64
+		{2555747D-1405-4602-94FC-7A72E5DC1198}.Release|x64.Build.0 = Release|x64
+		{2555747D-1405-4602-94FC-7A72E5DC1198}.Release|x86.ActiveCfg = Release|Win32
+		{2555747D-1405-4602-94FC-7A72E5DC1198}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
