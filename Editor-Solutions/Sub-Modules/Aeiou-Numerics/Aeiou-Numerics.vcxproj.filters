@@ -20,5 +20,8 @@
     <ClInclude Include="..\..\..\Include\Aeiou\Numerics.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Numerics\Ratio.hh">
+      <Filter>Header-Files\Numerics</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

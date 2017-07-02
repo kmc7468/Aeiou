@@ -138,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Aeiou\Numerics.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Numerics\Ratio.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
