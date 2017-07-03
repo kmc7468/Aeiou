@@ -62,7 +62,7 @@ namespace Aeiou
 
 			template<Utilities::IntMax_t Left_, Utilities::IntMax_t Right_>
 			class Min_ AEIOU_FINAL
-				: TypeTraits::Constant < Utilities::IntMax_t,
+				: TypeTraits::Constant<Utilities::IntMax_t,
 				Left_ < Right_ ? Left_ : Right_>
 			{
 				AEIOU_NON_INHERITABLE(Min_)
