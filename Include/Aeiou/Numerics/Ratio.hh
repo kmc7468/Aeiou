@@ -7,6 +7,7 @@ Made by kmc7468
 #define AEIOU_HEADER_NUMERICS_RATIO_HH
 #include <Aeiou/Configurations.hh>
 
+#include <Aeiou/TypeTraits/Constant.hh>
 #include <Aeiou/Utilities/Integer.hh>
 #include <Aeiou/Utilities/NonComparable.hh>
 #include <Aeiou/Utilities/NonCopyable.hh>
@@ -48,6 +49,48 @@ namespace Aeiou
 		typedef Ratio<1, 1000				> Milli;
 		typedef Ratio<1, 100				> Centi;
 		typedef Ratio<1, 10					> Deci;
+
+		namespace Details
+		{
+			template<Utilities::IntMax_t Left_, Utilities::IntMax_t Right_>
+			class Max_ AEIOU_FINAL
+				: TypeTraits::Constant<Utilities::IntMax_t,
+				Left_ > Right_ ? Left_ : Right_ >
+			{
+				AEIOU_NON_INHERITABLE(Max_)
+			};
+
+			template<Utilities::IntMax_t Left_, Utilities::IntMax_t Right_>
+			class Min_ AEIOU_FINAL
+				: TypeTraits::Constant < Utilities::IntMax_t,
+				Left_ < Right_ ? Left_ : Right_>
+			{
+				AEIOU_NON_INHERITABLE(Min_)
+			};
+
+			template<Utilities::IntMax_t Left_, Utilities::IntMax_t Right_>
+			class Gcd_ AEIOU_FINAL
+				: TypeTraits::Constant<Utilities::IntMax_t,
+				Gcd_<Min_<Left_, Right_>::Value,
+				Max_<Left_, Right_>::Value % Min_<Left_, Right_>::Value>::Value>
+			{
+				AEIOU_NON_INHERITABLE(Gcd_)
+			};
+			template<Utilities::IntMax_t Left_>
+			class Gcd_<Left_, 0> AEIOU_FINAL
+				: TypeTraits::Constant<Utilities::IntMax_t, Left_>
+			{
+				AEIOU_NON_INHERITABLE(Gcd_)
+			};
+
+			template<Utilities::IntMax_t Left_, Utilities::IntMax_t Right_>
+			class Lcm_ AEIOU_FINAL
+				: TypeTraits::Constant<Utilities::IntMax_t,
+				Left_ / Gcd_<Left_, Right_>::Value * Right_>
+			{
+				AEIOU_NON_INHERITABLE(Lcm_)
+			};
+		}
 	}
 }
 
