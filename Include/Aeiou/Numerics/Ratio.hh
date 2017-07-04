@@ -103,7 +103,34 @@ namespace Aeiou
 					(Ratio_::Denominator / (Gcd_<Ratio_::Numerator, Ratio_::Denominator>::Value))
 				> Type;
 			};
-			
+			template<>
+			class Simplify_<Ratio<0, 0>> AEIOU_FINAL
+				: Utilities::NonComparable, Utilities::NonCopyable
+			{
+				AEIOU_NON_INHERITABLE(Simplify_)
+
+			public:
+				typedef Ratio<0, 0> Type;
+			};
+			template<Utilities::IntMax_t Numerator_>
+			class Simplify_<Ratio<Numerator_, 0>> AEIOU_FINAL
+				: Utilities::NonComparable, Utilities::NonCopyable
+			{
+				AEIOU_NON_INHERITABLE(Simplify_)
+
+			public:
+				typedef Ratio<0, 0> Type;
+			};
+			template<Utilities::IntMax_t Denominator_>
+			class Simplify_<Ratio<0, Denominator_>> AEIOU_FINAL
+				: Utilities::NonComparable, Utilities::NonCopyable
+			{
+				AEIOU_NON_INHERITABLE(Simplify_)
+
+			public:
+				typedef Ratio<0, 0> Type;
+			};
+
 			template<typename Left_, typename Right_>
 			class Reduction_ AEIOU_FINAL
 				: Utilities::NonComparable, Utilities::NonCopyable
@@ -160,6 +187,52 @@ namespace Aeiou
 		class RatioDiv
 			: public RatioMul<Left_, Ratio<Right_::Denominator, Right_::Numerator>>
 		{};
+
+		template<typename Left_, typename Right_>
+		class RatioEqual AEIOU_FINAL
+			: public TypeTraits::Constant<bool,
+			(Details::Simplify_<Left_>::Type::Numerator ==
+			 Details::Simplify_<Right_>::Type::Numerator) &&
+			 (Details::Simplify_<Left_>::Type::Denominator ==
+			  Details::Simplify_<Right_>::Type::Denominator)>
+		{};
+
+		template<typename Left_, typename Right_>
+		class RatioNotEqual AEIOU_FINAL
+			: public TypeTraits::Constant<bool,
+			!((Details::Simplify_<Left_>::Type::Numerator ==
+			 Details::Simplify_<Right_>::Type::Numerator) &&
+			 (Details::Simplify_<Left_>::Type::Denominator ==
+			  Details::Simplify_<Right_>::Type::Denominator))>
+		{};
+
+		template<typename Left_, typename Right_>
+		class RatioLess
+			: public TypeTraits::Constant<bool,
+			(Details::Reduction_<Left_, Right_>::TypeA::Numerator <
+			 Details::Reduction_<Left_, Right_>::TypeB::Numerator)>
+		{};
+
+		template<typename Left_, typename Right_>
+		class RatioLessEqual
+			: public TypeTraits::Constant<bool,
+			(Details::Reduction_<Left_, Right_>::TypeA::Numerator <=
+			 Details::Reduction_<Left_, Right_>::TypeB::Numerator)>
+		{};
+
+		template<typename Left_, typename Right_>
+		class RatioGreater
+			: public TypeTraits::Constant<bool,
+			(Details::Reduction_<Left_, Right_>::TypeA::Numerator >
+			 Details::Reduction_<Left_, Right_>::TypeB::Numerator)>
+		{};
+
+		template<typename Left_, typename Right_>
+		class RatioGreaterEqual
+			: public TypeTraits::Constant<bool,
+			(Details::Reduction_<Left_, Right_>::TypeA::Numerator >=
+			 Details::Reduction_<Left_, Right_>::TypeB::Numerator)>
+		{};
 	}
 
 	using Numerics::Ratio;
@@ -174,6 +247,7 @@ namespace Aeiou
 	using Numerics::Killo;
 	using Numerics::Hecto;
 	using Numerics::Deca;
+
 #ifdef AEIOU_INTEGER_MAX_64
 	using Numerics::Atto;
 	using Numerics::Femto;
@@ -189,6 +263,14 @@ namespace Aeiou
 	using Numerics::RatioSub;
 	using Numerics::RatioMul;
 	using Numerics::RatioDiv;
+
+	using Numerics::RatioEqual;
+	using Numerics::RatioNotEqual;
+
+	using Numerics::RatioLess;
+	using Numerics::RatioLessEqual;
+	using Numerics::RatioGreater;
+	using Numerics::RatioGreaterEqual;
 }
 
 #endif
