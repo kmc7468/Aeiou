@@ -54,23 +54,23 @@ namespace Aeiou
 		{
 			template<Utilities::IntMax_t Left_, Utilities::IntMax_t Right_>
 			class Max_ AEIOU_FINAL
-				: TypeTraits::Constant<Utilities::IntMax_t,
-				Left_ > Right_ ? Left_ : Right_ >
+				: public TypeTraits::Constant<Utilities::IntMax_t,
+				((Left_ > Right_) ? Left_ : Right_)>
 			{
 				AEIOU_NON_INHERITABLE(Max_)
 			};
 
 			template<Utilities::IntMax_t Left_, Utilities::IntMax_t Right_>
 			class Min_ AEIOU_FINAL
-				: TypeTraits::Constant<Utilities::IntMax_t,
-				Left_ < Right_ ? Left_ : Right_>
+				: public TypeTraits::Constant<Utilities::IntMax_t,
+				((Left_ < Right_) ? Left_ : Right_)>
 			{
 				AEIOU_NON_INHERITABLE(Min_)
 			};
 
 			template<Utilities::IntMax_t Left_, Utilities::IntMax_t Right_>
 			class Gcd_ AEIOU_FINAL
-				: TypeTraits::Constant<Utilities::IntMax_t,
+				: public TypeTraits::Constant<Utilities::IntMax_t,
 				Gcd_<Min_<Left_, Right_>::Value,
 				Max_<Left_, Right_>::Value % Min_<Left_, Right_>::Value>::Value>
 			{
@@ -78,20 +78,117 @@ namespace Aeiou
 			};
 			template<Utilities::IntMax_t Left_>
 			class Gcd_<Left_, 0> AEIOU_FINAL
-				: TypeTraits::Constant<Utilities::IntMax_t, Left_>
+				: public TypeTraits::Constant<Utilities::IntMax_t, Left_>
 			{
 				AEIOU_NON_INHERITABLE(Gcd_)
 			};
 
 			template<Utilities::IntMax_t Left_, Utilities::IntMax_t Right_>
 			class Lcm_ AEIOU_FINAL
-				: TypeTraits::Constant<Utilities::IntMax_t,
+				: public TypeTraits::Constant<Utilities::IntMax_t,
 				Left_ / Gcd_<Left_, Right_>::Value * Right_>
 			{
 				AEIOU_NON_INHERITABLE(Lcm_)
 			};
+
+			template<typename Ratio_>
+			class Simplify_ AEIOU_FINAL
+				: Utilities::NonComparable, Utilities::NonCopyable
+			{
+				AEIOU_NON_INHERITABLE(Simplify_)
+
+			public:
+				typedef Ratio<
+					(Ratio_::Numerator / (Gcd_<Ratio_::Numerator, Ratio_::Denominator>::Value)),
+					(Ratio_::Denominator / (Gcd_<Ratio_::Numerator, Ratio_::Denominator>::Value))
+				> Type;
+			};
+			
+			template<typename Left_, typename Right_>
+			class Reduction_ AEIOU_FINAL
+				: Utilities::NonComparable, Utilities::NonCopyable
+			{
+				AEIOU_NON_INHERITABLE(Reduction_)
+
+			public:
+				typedef Ratio<
+					(Left_::Numerator * (Left_::Numerator /
+					(Left_::Denominator * (Right_::Denominator / Details::Gcd_<
+											Left_::Denominator, Right_::Denominator>::Value)))),
+					(Left_::Denominator * (Right_::Denominator / Details::Gcd_<
+											Left_::Denominator, Right_::Denominator>::Value))
+				> TypeA;
+				typedef Ratio<
+					(Right_::Numerator * (Right_::Numerator /
+					(Left_::Denominator * (Right_::Denominator / Details::Gcd_<
+											Left_::Denominator, Right_::Denominator>::Value)))),
+					(Left_::Denominator * (Right_::Denominator / Details::Gcd_<
+											Left_::Denominator, Right_::Denominator>::Value))
+				> TypeB;
+			};
 		}
+	
+		template<typename Left_, typename Right_>
+		class RatioAdd
+			: public Details::Simplify_<Ratio<
+			(Left_::Numerator * (Right_::Denominator / Details::Gcd_<
+								 Left_::Denominator, Right_::Denominator>::Value)) +
+								(Right_::Numerator * (Left_::Denominator / Details::Gcd_<
+								 Left_::Denominator, Right_::Denominator>::Value)),
+								(Left_::Denominator * (Right_::Denominator / Details::Gcd_<
+								 Left_::Denominator, Right_::Denominator>::Value))>>::Type
+		{};
+
+		template<typename Left_, typename Right_>
+		class RatioSub
+			: public Details::Simplify_<Ratio<
+			(Left_::Numerator * (Right_::Denominator / Details::Gcd_<
+								 Left_::Denominator, Right_::Denominator>::Value)) -
+								(Right_::Numerator * (Left_::Denominator / Details::Gcd_<
+								 Left_::Denominator, Right_::Denominator>::Value)),
+								(Left_::Denominator * (Right_::Denominator / Details::Gcd_<
+								 Left_::Denominator, Right_::Denominator>::Value))>>::Type
+		{};
+
+		template<typename Left_, typename Right_>
+		class RatioMul
+			: public Details::Simplify_<Ratio<Left_::Numerator * Right_::Numerator,
+			Left_::Denominator * Right_::Denominator>>::Type
+		{};
+
+		template<typename Left_, typename Right_>
+		class RatioDiv
+			: public RatioMul<Left_, Ratio<Right_::Denominator, Right_::Numerator>>
+		{};
 	}
+
+	using Numerics::Ratio;
+
+#ifdef AEIOU_INTEGER_MAX_64
+	using Numerics::Exa;
+	using Numerics::Peta;
+	using Numerics::Tera;
+#endif
+	using Numerics::Giga;
+	using Numerics::Mega;
+	using Numerics::Killo;
+	using Numerics::Hecto;
+	using Numerics::Deca;
+#ifdef AEIOU_INTEGER_MAX_64
+	using Numerics::Atto;
+	using Numerics::Femto;
+	using Numerics::Pico;
+#endif
+	using Numerics::Nano;
+	using Numerics::Micro;
+	using Numerics::Milli;
+	using Numerics::Centi;
+	using Numerics::Deci;
+
+	using Numerics::RatioAdd;
+	using Numerics::RatioSub;
+	using Numerics::RatioMul;
+	using Numerics::RatioDiv;
 }
 
 #endif
