@@ -7,6 +7,12 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{073afb1b-27f2-427f-b1da-2f150b1d1706}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Algorithms">
+      <UniqueIdentifier>{092daf68-007c-4898-b916-347205d00ab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Algorithms\Details">
+      <UniqueIdentifier>{27f9b6af-e263-4e75-b0ff-69d9c5826a5d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\StaticAssert-Common.cc">
@@ -16,6 +22,15 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Aeiou\Algorithms.hh">
       <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Algorithms\SelectionSort.hh">
+      <Filter>Header-Files\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Algorithms\Sort.hh">
+      <Filter>Header-Files\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Algorithms\Details\SelectionSort.hh">
+      <Filter>Header-Files\Algorithms\Details</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

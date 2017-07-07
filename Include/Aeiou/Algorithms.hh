@@ -6,4 +6,6 @@ Made by kmc7468
 #ifndef AEIOU_HEADER_ALGORITHMS_HH
 #define AEIOU_HEADER_ALGORITHMS_HH
 
+#include <Aeiou/Algorithms/Sort.hh>
+
 #endif

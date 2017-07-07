@@ -138,6 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Aeiou\Algorithms.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Algorithms\Details\SelectionSort.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Algorithms\SelectionSort.hh" />
+    <ClInclude Include="..\..\..\Include\Aeiou\Algorithms\Sort.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
