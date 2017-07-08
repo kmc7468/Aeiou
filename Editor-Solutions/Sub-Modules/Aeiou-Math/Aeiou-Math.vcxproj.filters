@@ -7,6 +7,9 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{d66e60ac-0b4e-402d-8e83-f15bc7713f7c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Math">
+      <UniqueIdentifier>{e24e41e2-30d4-4811-af05-dc56ef86a98b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\StaticAssert-Common.cc">
@@ -16,6 +19,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Aeiou\Math.hh">
       <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Aeiou\Math\Constants.hh">
+      <Filter>Header-Files\Math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
