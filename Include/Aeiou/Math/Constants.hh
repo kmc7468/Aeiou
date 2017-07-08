@@ -14,6 +14,7 @@ namespace Aeiou
 		AEIOU_CONSTEXPR const long double e		= 2.7182818L;
 		AEIOU_CONSTEXPR const long double PI	= 3.1415926L;
 		AEIOU_CONSTEXPR const long double g		= 9.80665L;
+		AEIOU_CONSTEXPR const long double T		= 2 * PI;
 	}
 
 	using Math::e;
