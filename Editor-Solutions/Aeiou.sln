@@ -36,6 +36,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aeiou-Algorithms", "Sub-Mod
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aeiou-Math", "Sub-Modules\Aeiou-Math\Aeiou-Math.vcxproj", "{D80993DB-F70F-4425-AD1A-279250EAC12D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aeiou-AI", "Sub-Modules\Aeiou-AI\Aeiou-AI.vcxproj", "{E6904D22-D2F6-4EB9-A119-0386F4344975}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -116,6 +118,14 @@ Global
 		{D80993DB-F70F-4425-AD1A-279250EAC12D}.Release|x64.Build.0 = Release|x64
 		{D80993DB-F70F-4425-AD1A-279250EAC12D}.Release|x86.ActiveCfg = Release|Win32
 		{D80993DB-F70F-4425-AD1A-279250EAC12D}.Release|x86.Build.0 = Release|Win32
+		{E6904D22-D2F6-4EB9-A119-0386F4344975}.Debug|x64.ActiveCfg = Debug|x64
+		{E6904D22-D2F6-4EB9-A119-0386F4344975}.Debug|x64.Build.0 = Debug|x64
+		{E6904D22-D2F6-4EB9-A119-0386F4344975}.Debug|x86.ActiveCfg = Debug|Win32
+		{E6904D22-D2F6-4EB9-A119-0386F4344975}.Debug|x86.Build.0 = Debug|Win32
+		{E6904D22-D2F6-4EB9-A119-0386F4344975}.Release|x64.ActiveCfg = Release|x64
+		{E6904D22-D2F6-4EB9-A119-0386F4344975}.Release|x64.Build.0 = Release|x64
+		{E6904D22-D2F6-4EB9-A119-0386F4344975}.Release|x86.ActiveCfg = Release|Win32
+		{E6904D22-D2F6-4EB9-A119-0386F4344975}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

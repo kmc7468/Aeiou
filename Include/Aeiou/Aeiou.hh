@@ -8,6 +8,7 @@ Made by kmc7468
 
 #include <Aeiou/Configurations.hh>
 
+#include <Aeiou/AI.hh>
 #include <Aeiou/Algorithms.hh>
 #include <Aeiou/Math.hh>
 #include <Aeiou/Numerics.hh>
